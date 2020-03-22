@@ -1,0 +1,8 @@
+2020-03-22 02:52:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "DROP DROP[*] TABLE IF EXISTS EMPLOYEES"; se esperaba "TABLE, INDEX, USER, SEQUENCE, CONSTANT, TRIGGER, VIEW, ROLE, ALIAS, SCHEMA, ALL, DOMAIN, TYPE, DATATYPE, AGGREGATE, SYNONYM"
+Syntax error in SQL statement "DROP DROP[*] TABLE IF EXISTS EMPLOYEES"; expected "TABLE, INDEX, USER, SEQUENCE, CONSTANT, TRIGGER, VIEW, ROLE, ALIAS, SCHEMA, ALL, DOMAIN, TYPE, DATATYPE, AGGREGATE, SYNONYM"; SQL statement:
+DROP DROP TABLE IF EXISTS employees [42001-200]
+2020-03-22 02:53:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "EMPLOYEES" ya existe
+Table "EMPLOYEES" already exists; SQL statement:
+CREATE TABLE employees ( employeeId INT AUTO_INCREMENT PRIMARY KEY, fio VARCHAR(50) NOT NULL, telephone VARCHAR(50), jobPos VARCHAR(250) NOT NULL, department VARCHAR(50) NOT NULL, email VARCHAR(50) NOT NULL, admin BOOLEAN NOT NULL ) [42101-200]
